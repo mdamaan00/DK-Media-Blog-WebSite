@@ -1,0 +1,37 @@
+.single-blog-post{
+    
+    margin: 40px 18% ;
+}
+
+.single-blog-post img{
+    width: auto !important;
+}
+.single-blog-post div{
+    width: auto !important;
+}
+
+.single-blog-post>.err-msg,.loader{
+    text-align: center;
+}
+
+
+@media(max-width:400px) {
+    .single-blog-post h1{
+        font-size: 20px !important;
+    }
+    .single-blog-post h2{
+        font-size: 18px !important;
+    }
+    .single-blog-post li{
+        font-size: 16px !important;
+    }
+    
+    .single-blog-post P{
+        font-size: 16px !important;
+    }
+    .single-blog-post{
+        
+        margin: 40px 10% ;
+    }
+    
+}

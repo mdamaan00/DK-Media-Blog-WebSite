@@ -1,0 +1,119 @@
+.bg-color{
+  background:#26282c;
+  width: 200% !important;
+  height: 100% !important;
+  
+  
+}
+body{
+  color: white !important;
+}
+
+
+
+.btn-2  {
+  color: white !important;
+}
+.btn-1 {
+  color: white !important;
+}
+.content p{
+  color: white;
+  
+}
+.para5-1 h1 {
+  color: white !important;
+}
+
+.flex-btn > p {
+  background-color: #8f8f8f !important;
+
+  box-shadow: 1px 1px 15px #858585 !important;
+}
+
+.form-content h2 {
+  color: black !important;
+}
+
+nav li:last-child a {
+  border: 2px solid rgb(255, 255, 255) !important;
+  padding: 12px;
+}
+nav li:last-child a:hover {
+  color: rgb(0, 0, 0) !important;
+  background-color: white !important;
+}
+
+
+@media (max-width: 1179px) {
+  nav ul {
+    background-color: rgb(37, 37, 37) !important;
+  }
+  nav li a {
+    color: white !important;
+  }
+  nav li:last-child a {
+    border: none !important;
+    
+  }
+  .bg-color{
+    background:#26282c;
+    width: 400% !important;
+    height: 100% !important;
+    
+    
+  }
+}
+
+nav a{
+  color: white !important;
+}
+
+
+nav a:hover {
+  color: #ff725e !important;
+}
+
+.hamburger{
+  color: white !important;
+}
+
+
+.blog-link{
+  color: #ff725e !important;
+}
+
+
+
+.blog-card{
+  background-color: #26282c !important;
+}
+
+.blog-heading{
+  color: rgb(255, 255, 255);
+}
+
+.black-back {
+  background: #ff725e !important;
+  transition: all 0.5s ease ;
+}
+
+.testimonials{
+  color: #26282c !important ;
+}
+
+.c6-circle-1 {
+  background-color: #26282c !important;
+  
+}
+
+.child1 p:first-child {
+  color: #26282c !important;
+  
+}
+
+.c6-col2 {
+  
+  background-color: #26282c !important;
+  
+}

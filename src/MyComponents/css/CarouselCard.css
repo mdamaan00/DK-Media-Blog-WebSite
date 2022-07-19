@@ -1,0 +1,69 @@
+.carouselCard{
+    width: 100%;
+    
+}
+
+.cimage{
+    width: 90px;
+    height: 90px;
+    background-color: grey;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-60%);
+    
+}
+.cimage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    
+    object-fit: cover;
+}
+.content{
+    color: white;
+    
+    
+}
+.content p{
+    line-height: 50px;
+    font-size: 25px;
+    
+    
+}
+.carouselCard h3{
+    color: white;
+    margin-bottom: 10px;
+    transform: translate(5%,-75px);
+}
+
+@media(max-width:870px){
+    .cimage{
+       
+        transform: translate(0%);
+        
+    }
+    .carouselCard h3{
+        
+        transform: translate(0%,0px);
+    }
+    .content p{
+        line-height: 25px !important;
+        font-size: 18px;
+        
+        
+    }
+}
+
+@media(max-width:375px){
+    .content h3{
+        font-size: 18px;
+    }
+    .cimage{
+        width: 80px;
+        height: 80px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+}

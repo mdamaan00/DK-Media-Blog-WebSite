@@ -1,0 +1,66 @@
+.Circle {
+  width: 275px;
+  height: 275px;
+  border-radius: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 30px 40px 30px 40px;
+  border: 2px solid #ff725e;
+  padding: 30px;
+  transition: all ease-in-out 0.3s;
+}
+.Circle:hover {
+  box-shadow: 3px 3px 25px #858585;
+  transition: all ease-in-out 0.3s;
+}
+.circle-h2 {
+  font-size: 30px;
+  margin-top: 5px;
+}
+.circle-h4 {
+  font-size: 22px;
+  margin-top: 0px;
+}
+.circle-p {
+  font-size: 18px;
+  margin-top: 0px;
+}
+@media (max-width: 1326px) {
+  .Circle {
+    margin: 40px 50px 40px 50px;
+  }
+}
+
+@media (max-width: 622px) {
+  .Circle {
+    width: 300px;
+    height: 300px;
+  }
+  .circle-h2 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .circle-h4 {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .circle-p {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .Circle {
+    width: 170px;
+    height: 170px;
+  }
+  .circle-h4 {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .circle-p {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+}

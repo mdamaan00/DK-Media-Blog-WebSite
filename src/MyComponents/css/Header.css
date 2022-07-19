@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap");
+
+nav,
+ul,
+li,
+nav a {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background: #ff715ec7;
+  color: aliceblue;
+}
+::-moz-selection {
+  background: #ff715ebe;
+  color: aliceblue;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  padding: 19.32px 0;
+  margin-left: 50px;
+  width: 150px;
+  
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 80px;
+}
+nav a {
+  color: black;
+  font-size: 20px;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ff725e;
+}
+
+nav li:last-child a {
+  border: 2px solid black;
+  padding: 12px;
+}
+nav li:last-child a:hover {
+  color: white;
+  background-color: black;
+}
+nav #nav-icon {
+  font-size: 25px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  color: black !important;
+}
+#arrow-left {
+  display: none;
+}
+
+@media (max-width: 1095px) {
+  .logo {
+    margin-left: 20px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 1179px) {
+  nav #nav-icon {
+    display: block;
+  }
+  nav ul {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    top: 0px;
+    height: 100%;
+    background: white;
+    padding-top: 25px;
+    display: block;
+    transition: 0.5s;
+  }
+
+  #arrow-left {
+    display: block;
+    font-size: 25px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  nav li {
+    display: block;
+    margin: 40px 0;
+    margin-left: 40px !important;
+    line-height: 30px;
+  }
+
+  nav li a {
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  nav li:last-child a {
+    border: none;
+    padding: 0px;
+  }
+  nav li:last-child a:hover {
+    color: #ff725e !important;
+    background-color: white !important;
+  }
+  nav ul.show {
+    left: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .logo {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+}

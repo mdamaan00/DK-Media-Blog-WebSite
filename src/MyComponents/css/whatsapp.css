@@ -1,0 +1,26 @@
+.whatsapp_float {
+    position: fixed;
+    color: grey;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    
+    z-index: 2;
+}
+.fa-whatsapp  {
+    font-size: 40px;
+    color:#fff;
+    text-decoration: none;
+    background:
+     linear-gradient(#25d366,#25d366) 14% 84%/16% 16% no-repeat,
+     radial-gradient(#25d366 60%,transparent 0);
+  }
+@media screen and (max-width: 767px) {
+    
+
+    .whatsapp_float {
+        
+        bottom: 15px;
+        right: 15px;
+    }
+}

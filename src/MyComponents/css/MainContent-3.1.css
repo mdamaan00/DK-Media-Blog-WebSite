@@ -1,0 +1,40 @@
+.mainContent31 {
+    
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .circle-div{
+    display: inline-block;
+  }
+
+.u-heading {
+    color: #ff725e;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px !important;
+  }
+  .Heading-31 {
+    font-size: 80px;
+    margin-top: -20px;
+   
+  }
+  @media (max-width: 803px) {
+    .u-heading {
+      font-size: 30px;
+    }
+    .Heading-31 {
+      font-size: 60px;
+    }
+    
+  }
+  @media (max-width: 622px) {
+    .u-heading {
+      font-size: 20px;
+    }
+    .Heading-31 {
+      font-size: 30px;
+    }
+  }
+  

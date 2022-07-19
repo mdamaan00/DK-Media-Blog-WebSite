@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link id="theme" rel="stylesheet" type="text/css" href="" />
+  <meta name="theme-color" content="#FF725E" />
+  <meta name="description" content="Advertise, analyse and optimise! We do it all for you" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo512.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <meta name="google-site-verification" content="amGjUSootWFHZDCxANi9CaKOGTDhwvqXAdH2AzTt4sU" />
+  <title>DK Media</title>
+</head>
+<style>
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ff725e;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e05c4b;
+  }
+
+  .bg-color {
+
+    background: #26282c;
+    
+    top: 0;
+    height: 100%;
+    margin-left: -480px;
+    width: 0;
+    position:fixed;
+    transition: all 0.5s ease;
+    z-index: -2 !important;
+    transform: skewX(45deg);
+
+  }
+</style>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div onclick="slide()" class="switcher">
+    <div class="switch"><i id='icon' class="fas fa-moon"></i>
+    </div>
+  </div>
+  <div class="bg-color"></div>
+  <div id="root"></div>
+
+
+</body>
+<script>
+ 
+  function slide() {
+    let element = document.getElementsByClassName("switch")[0];
+    var theme = document.getElementsByTagName('link')[1];
+    let icon = document.getElementById('icon');
+    var logo = document.getElementsByClassName("logo");
+    if (element.classList.length == 1) {
+      theme.setAttribute('href', 'dark.css');
+      let temp = logo[0].src
+      logo[0].src=logo[0].alt
+      logo[0].alt = temp
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+      element.classList.add("move");
+      
+    } else {
+      theme.setAttribute('href', '');
+      let temp = logo[0].src
+      logo[0].src=logo[0].alt
+      logo[0].alt = temp
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+      element.classList.remove("move");
+
+
+    }
+  }
+</script>
+
+</html>
